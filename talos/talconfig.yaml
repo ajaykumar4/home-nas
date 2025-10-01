@@ -20,18 +20,18 @@ cniConfig:
 
 nodes:
   - hostname: "nas"
-    ipAddress: "192.168.8.135"
+    ipAddress: "192.168.8.248"
     installDisk: "/dev/mmcblk0"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/2e122799f30434cc2c5d87d2e734eebfb783a3b133061078ea45944cad0e1924
+    talosImageURL: factory.talos.dev/installer/98959a176fba423d5943ee2c9ca257c35b027bd56136ae6d075b4cb62d72771b
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
           hardwareAddr: "66:a4:09:8f:bf:f6"
         dhcp: false
         addresses:
-          - "192.168.8.135/24"
+          - "192.168.8.248/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.8.1"
