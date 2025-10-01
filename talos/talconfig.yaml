@@ -20,7 +20,7 @@ cniConfig:
 
 nodes:
   - hostname: "nas"
-    ipAddress: "192.168.8.248"
+    ipAddress: "192.168.8.187"
     installDisk: "/dev/mmcblk0"
     machineSpec:
       secureboot: false
@@ -28,10 +28,10 @@ nodes:
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "66:a4:09:8f:bf:f6"
+          hardwareAddr: "e6:5f:5e:9f:82:53"
         dhcp: false
         addresses:
-          - "192.168.8.248/24"
+          - "192.168.8.187/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.8.1"
