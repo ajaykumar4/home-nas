@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/cert-manager.io/certificate_v1.json
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: aknuk-dev-production
+spec:
+  secretName: aknuk-dev-production-tls
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer
+  commonName: aknuk.dev
+  dnsNames:
+    - aknuk.dev
+    - '*.aknuk.dev'
+sops:
+  age:
+    - recipient: age1ptne7j9y9v4vdkjaj4e97kk6cexs0vtfn8lswryc584xguudj4usfga4el
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQdjVZaTZoOTh3OUVXNFJL
+        clR5cUZFd2h1L3VHd1ZxVDZGWHl2bHk0bFRrCi9paHd0cHQwZ1BPMnNERk43MUFz
+        ME9IbmRsN0J2RmpFOGN0Z01rd2c0VUkKLS0tIGYyUWZEQll4WnVOWktHYldrS3Zs
+        SXNwNFZ4cGY3T3hJc0lsTk5ZbHJGVkUKxlc4EFigZQBg0CMopBS7Bt7WOLvMlDt5
+        NBJM0y4x+vzZicK9DBLe+2sECM71I9+qO02dz3WHXC0N/2AK2rLyGg==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-10-01T13:18:05Z"
+  mac: ENC[AES256_GCM,data:6cXy+kibGQgcytZEWRbxOs/RAit6NtOFumJx8ezE0KmU13ebPTV5FyuYg67YSkS8W4UVKWSsyTfkAZeXx0Q1ZRaIQdVds3WbUWJHLXBeIgzwLF+RFZIyLX3t3N/2jaMjK+AZWPYYRse1K3LKpZIUB7R2Z6qT5djsu5dJdLBGTuM=,iv:lYfvSGvQBZCcg3RcwdtrVFLGP+IpaA+IiGka/Iesvyc=,tag:8fs1uC3YSyKRs/KtimBVlQ==,type:str]
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.11.0
