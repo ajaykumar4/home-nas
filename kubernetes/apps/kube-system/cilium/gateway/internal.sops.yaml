@@ -9,7 +9,7 @@ spec:
   gatewayClassName: cilium
   addresses:
     - type: IPAddress
-      value: 192.168.8.202
+      value: 192.168.88.102
   infrastructure:
     annotations:
       external-dns.alpha.kubernetes.io/hostname: internal.aknuk.dev
@@ -37,14 +37,14 @@ sops:
     - recipient: age1ptne7j9y9v4vdkjaj4e97kk6cexs0vtfn8lswryc584xguudj4usfga4el
       enc: |
         -----BEGIN AGE ENCRYPTED FILE-----
-        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRbHNYWkhmaVVkYW1TL0tw
-        YWNkQ1lhVlZJRmtETmNpYWJsYXBaOGdCc2hJClcwWXhzR2IxQVBxUythZkk0YmpD
-        TkQzaGpHVXpHSUZJM2ExemcxNzF1SUkKLS0tIGN3clo3cUFyZXBISGVZUWhnTUhW
-        V1dXMkhJK2xCU3R0VkdUTSt0MmtJOW8KL+y4C/POXmb2a8VbgeTZj5yjnNFUGwgn
-        CHt6Bj54O1zeyK9misIRluac1QoDki5GYyD51Oh23KDQUusYTunvRg==
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBvS2RSajZtMnhuQTRaUE5z
+        dnI5WHJOdnFwaVJCeXNhTDlCM1NWei8vK1ZvCmpDc2FnZ01VRTF6ejZGdTNWTFBj
+        SUQrY2REN2xicGNvTTJUSkxpWmsyWFkKLS0tIEFhOENaYXJ0Z0dZVGYrc1R6M2VX
+        ZWVxZUhrWWVGckF4RnMxYUJWb3FZaHMKnq7L+NaQFljKGM51U9bgjC+T0wWD/EUM
+        +9qPg0ss1O6GMEmBelkNNov1+CVaZGLXGcElomOYa44eaAekdzqEAg==
         -----END AGE ENCRYPTED FILE-----
-  lastmodified: "2025-10-01T14:17:33Z"
-  mac: ENC[AES256_GCM,data:/wmTH7ySvsL6FOBLOt7EQFzQOBNdza4l23SNTOPoIlpVlfMRIPRHBsdUi/f+M2TSOUKHPuuhdc3zXXWYzfg6qTtK/ZMH43ZSvrAiPxyAs180UZ+KELM4DtzHE5zmTioPB1k5cU/7qsAcfxDotwEZ/hcnZcRwNc4zLFVgVG9/7ms=,iv:ghM//E8yLlLgWoi/fuDF7rqbIRafEkZmroT4lyp3PKU=,tag:8w/Ce3SznPB/Xtc8FhQapg==,type:str]
+  lastmodified: "2025-10-02T15:47:26Z"
+  mac: ENC[AES256_GCM,data:FqtWwUl0NyywREtiSxvnEXlrYFIUIQGcu7HgFxaqLMxkp1GhuCZU6laoZDca7+8uF+XI+Pp4aOc7Z/4e7BbLFYaN9UxBc9K8krm8uHSXiYhDDxeujc6yijohr1BAwCGHkS3AawBCl8XN6leICZBuyWprmyXjBDrlTJL39mztqS8=,iv:V+duprdM5kRY+lU2po/pJHLV8HmqvwwWXT8dOQ0kbh4=,tag:Ix+Byd8Bo/Fcw/MT9IKkdA==,type:str]
   encrypted_regex: ^(data|stringData)$
   mac_only_encrypted: true
   version: 3.11.0
